@@ -1,0 +1,18 @@
+@media screen and (min-width: 450px) and (max-width: 1023px){
+	.cartao-img-mobile {
+		display: none;
+	}
+
+	.cartao-img-td {
+		display: inline-grid;
+	}
+
+	.secao {
+		row-gap: 25px;
+	}
+
+	.titulo-secao {
+		grid-column:	span 4;
+		margin-top:		10px;
+	}
+}

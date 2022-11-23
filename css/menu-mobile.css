@@ -1,0 +1,108 @@
+/*código do icone hamburguer no menu*/
+.botao-menu i::before {
+	content:	"\e904";
+	font-size:	25px;
+}
+
+/*código do icone de notificação no menu*/
+.botao-notificacao i::before {
+	content:	"\e906";
+	font-size:	25px;
+}
+
+/*código da área do nome do usuário no menu*/
+.nome-usuario {
+	display:	none;
+}
+
+/*tamanho do logo no cabeçalho*/
+.logo-cabecalho {
+	width:	40px;
+}
+
+/*código da estilização do cabeçalho*/
+.cabecalho {
+	display:			flex;
+	justify-content:	space-between;
+	align-items:		center;
+	padding:			8px 16px;
+	background-color:	#15191C;
+	box-shadow:			0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+/*código da estilização do menu lateral*/
+.menu-lateral {
+	display:			flex;
+	flex-direction:		column;
+	background-color:	#15191C;
+	width:				75vw;
+	height:				100vh;
+
+	position:	absolute;
+	left:		-100vw;
+	transition:	0.75s;
+}
+
+.menu-lateral-aberto {
+	left:		0;
+	transition: 0.75s;
+}
+
+/*tamanho do menu lateral*/
+.logo-menu {
+	width:		125px;
+	align-self:	center;
+	padding:	16px;
+}
+
+/*estilização da escrita do menu, tanto o link ativo quanto o resto*/
+.menu-link {
+	display:		flex;
+
+	align-items:	center;
+	padding-left:	65px;
+
+	height:		65px;
+	color:		#95999C;
+}
+
+.menu-link::before {
+	width:		25px;
+	height:		25px;
+	position:	absolute;
+	left:		25px;
+	font-size:	25px;
+	font-weight:	500;
+}
+
+.menu-ativo {
+	border-left:	8px solid white;
+	color: 			white;
+	font-weight:	700;
+}
+
+/*início da inserção dos icons da barra de menu*/
+.menu-inicio::before {
+	content: "\e902";
+}
+
+.menu-videos::before {
+	content: "\e90e";
+}
+
+.menu-picos::before {
+	content: "\e909";
+}
+
+.menu-integrantes::before {
+	content: "\e903";
+}
+
+.menu-camisas::before {
+	content: "\e900";
+}
+
+.menu-pinturas::before {
+	content: "\e90a";
+}
+/*fim da inserção dos icons da barra de menu*/

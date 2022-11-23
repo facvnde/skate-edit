@@ -1,0 +1,89 @@
+@media screen and (min-width: 1024px){
+	.cartao-img-mobile {
+		display: none;
+	}
+
+	.cartao-img-td {
+		display: inline-grid;
+	}
+
+	.titulo-secao {
+		grid-column:	span 4;
+		margin-top:		10px;
+	}
+
+	.cartao-recentes {
+		display:				grid;
+		grid-template-columns:	repeat(2, auto);
+		align-itens:			center;
+		row-gap:				25px;
+		width:					250px;
+		padding:				15px;
+		box-sizing:				border-box;
+		align-self:				flex-start;
+	}
+
+	.cartao-recentes .titulo-secao {
+		grid-column: auto;
+	}
+
+	.cartao-link {
+		font-size:		0.8rem;
+		font-weight:	600;
+		color:			#0480DC;
+		justify-self:	flex-end;
+	}
+
+	.cartao-lista {
+		display:		grid;
+		row-gap:		16px;
+		grid-column:	span 2;
+	}
+
+	.cartao-item {
+		display:				grid;
+		grid-template-columns:	auto 1fr;
+		gap:					10px;
+	}
+
+	.cartao-item-img {
+		width:		40px;
+		grid-row:	span 2;
+	}
+
+	.cartao-item-titulo {
+		font-size:		1rem;
+		font-weight:	700;
+		line-height:	0.8rem;
+	}
+
+	.cartao-item-perfil {
+		font-size:		0.8rem;
+		color:			#95999C;
+	}
+
+	.destaque-videos	{ grid-area: destaque-videos;	}
+	.mais-vistos		{ grid-area: mais-vistos;		}
+	.videos-recentes	{ grid-area: videos-recentes;	}
+	.destaque-arte		{ grid-area: destaque-arte;		}
+	.novas-artes		{ grid-area: novas-artes;		}
+	.linha-produtos		{ grid-area: linha-produtos;	}
+
+	.corpo {
+		display:				grid;
+		grid-template-columns:	auto 1fr auto;
+		column-gap:				30px;
+		padding:				15px 60px;
+		grid-column:			2;
+
+		grid-template-areas:
+			"titulo-pagina titulo-pagina titulo-pagina"
+			"destaque-videos destaque-videos videos-recentes"
+			"mais-vistos mais-vistos mais-vistos"
+
+			"titulo-secao titulo-secao titulo-secao"
+			"novas-artes destaque-arte destaque-arte"
+			"linha-produtos linha-produtos linha-produtos"
+		;
+	}
+}

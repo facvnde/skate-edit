@@ -1,0 +1,37 @@
+/*Trazendo a fonte de icones para serem utilizadas no menu*/
+@font-face {
+	font-family: 'icones';
+	src: url(../font/icones.ttf);
+}
+
+/*setando os dados do body geral, como cor da página, cor da fonte da página e as fontes usadas*/
+body {
+	background-color:	#1D232A;
+	font-family:		'Open Sans', 'icones', sans-serif;
+	color:				#FFFFFF;
+}
+
+.fixo {
+	position:	fixed;
+}
+
+/*Tratando da responsividade, quando mudar para um monitor ou algo do tipo, mudar o layout das coisas */
+@media screen and (min-width: 1024px){
+	body {
+		display:				grid;
+		grid-template-columns:	auto 1fr;
+	}
+}
+
+/*estilizando o nome da página*/
+.titulo-pagina {
+	font-size:		1.5rem;
+	font-weight:	700;
+}
+
+/*estilizando o corpo da página*/
+.corpo {
+	padding:	24px 16px;
+	display:	grid;
+	gap:		16px;
+}

@@ -1,0 +1,41 @@
+.corpo {
+	padding:	24px 16px;
+	display:	grid;
+	gap:		16px;
+}
+
+.cartao {
+	width:				100%;
+	border-radius:		15px;
+	background-color:	#2C343A;
+	overflow:			hidden;
+}
+
+.integrante {
+	display:			grid;
+	grid-template-rows:	repeat(3, auto);
+	gap:				15px;
+	padding-bottom:		10px;
+}
+
+.cartao-img {
+	grid-column:	span 2;
+	width:			100px;
+	border-radius:	100%;
+	justify-self:	center;
+	padding:		10px 0;
+}
+
+.nome-integrante {
+	grid-column:	span 2;
+	font-size:		1.5rem;
+	font-weight:	700;
+	justify-self:	center;
+	padding-bottom:	5px;
+}
+
+.sobre-integrante {
+	grid-column:	span 2;
+	line-height:	1.2rem;
+	padding:		0 15px;
+}

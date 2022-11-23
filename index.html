@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+		<!-- Aqui colocaremos o charset para ver em qual tela é executada a página -->
+		<meta name="viewport" content="width= device-width, initial-scale=1.0">
+
+		<!-- Aqui puxamos a fonte tirada do google -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+
+		<link rel="stylesheet" href="css/reset.css">
+
+		<!--
+			Aqui puxamos os css que usaremos
+			por ser algo mais pensado pro mobile,
+			iremos montar primeiro pro mobile e no fim tablet/desktop
+		-->
+		<link rel="stylesheet" href="css/padrao.css">
+		<link rel="stylesheet" href="css/menu-mobile.css">	<link rel="stylesheet" href="css/home-mobile.css">
+		<link rel="stylesheet" href="css/menu-tablet.css">	<link rel="stylesheet" href="css/home-tablet.css">
+		<link rel="stylesheet" href="css/menu-desktop.css">	<link rel="stylesheet" href="css/home-desktop.css">
+
+		<title>Home || HZC</title>
+	</head>
+
+	<body>
+		<header class="cabecalho">
+			<!-- Botão do menu -->
+			<button class="botao-menu" aria-label="Menu"><i></i></button>
+
+			<!-- Logo da empresa -->
+			<img src="img/logo.svg" alt="Logo HZC" class="logo-cabecalho">
+
+			<!-- Nome do usuário -->
+			<p class="nome-usuario">Usuário Teste</p>
+
+			<!-- Botão de notificação -->
+			<button class="botao-notificacao" aria-label="Notificação"><i></i></button>
+		</header>
+
+		<!-- Menu lateral -->
+		<nav class="menu-lateral">
+			<img src="img/logo.svg" alt="Logo HZC" class="logo-menu">
+
+			<a href="#" class="menu-link menu-inicio menu-ativo">Início</a>
+			<a href="#" class="menu-link menu-videos">Vídeos</a>
+			<a href="#" class="menu-link menu-picos">Picos</a>
+			<a href="integrantes.html" class="menu-link menu-integrantes">Integrantes</a>
+			<a href="#" class="menu-link menu-camisas">Camisas</a>
+			<a href="#" class="menu-link menu-pinturas">Pinturas</a>
+		</nav>
+
+		<main class="corpo">
+			<h2 class="titulo-pagina">Início</h2>
+
+			<!-- Início vídeo destaque -->
+			<article class="cartao cartao-destaque destaque-videos">
+				<img src="img/banner-mobile_1.png" alt="Thumbnail do vídeo" class="cartao-img cartao-img-mobile">
+				<img src="img/banner_1.png" alt="Thumbnail do vídeo" class="cartao-img cartao-img-td">
+
+				<div class="cartao-conteudo">
+					<p class="cartao-video-destaque">Video em Destaque</p>
+
+					<h3 class="video-titulo">HZC - Life is...</h3>
+					<p class="video-autor">Lucas Facunde</p>
+
+					<p class="cartao-info cartao-minuto">15 minutos</p>
+					<p class="cartao-info cartao-visu">15k visualizações</p>
+
+					<button class="cartao-botao botao-destaque botao-play">Assistir agora</button>
+				</div>
+			</article>
+			<!-- fim vídeo destaque -->
+
+			<!-- inicio videos mais vistos -->
+			<section class="secao secao-videos mais-vistos">
+				<h3 class="titulo-secao">Vídeos mais vistos</h3>
+
+				<article class="cartao">
+					<img src="img/video_1.png" alt="Banner do Cartão" class="cartao-img">
+
+					<div class="cartao-conteudo">
+						<p class="video-autor">Bruno Lopes</p>
+
+						<h3 class="video-titulo">HZC - Title</h3>
+
+						<p class="cartao-info cartao-minuto">33 minutos</p>
+
+						<button class="cartao-botao botao-play"></button>
+					</div>
+				</article>
+
+				<article class="cartao">
+					<img src="img/video_2.png" alt="Banner do Cartão" class="cartao-img">
+
+					<div class="cartao-conteudo">
+						<p class="video-autor">Bruno Lopes</p>
+
+						<h3 class="video-titulo">HZC - Title</h3>
+
+						<p class="cartao-info cartao-minuto">33 minutos</p>
+
+						<button class="cartao-botao botao-play"></button>
+					</div>
+				</article>
+
+				<article class="cartao">
+					<img src="img/video_3.png" alt="Banner do Cartão" class="cartao-img">
+
+					<div class="cartao-conteudo">
+						<p class="video-autor">Bruno Lopes</p>
+
+						<h3 class="video-titulo">HZC - Title</h3>
+
+						<p class="cartao-info cartao-minuto">33 minutos</p>
+
+						<button class="cartao-botao botao-play"></button>
+					</div>
+				</article>
+
+				<article class="cartao">
+					<img src="img/video_4.png" alt="Banner do Cartão" class="cartao-img">
+
+					<div class="cartao-conteudo">
+						<p class="video-autor">Bruno Lopes</p>
+
+						<h3 class="video-titulo">HZC - Title</h3>
+
+						<p class="cartao-info cartao-minuto">33 minutos</p>
+
+						<button class="cartao-botao botao-play"></button>
+					</div>
+				</article>
+			</section>
+			<!-- fim vídeos mais vistos -->
+
+			<!-- inicio videos recentes -->
+			<article class="cartao cartao-recentes videos-recentes">
+				<h3 class="titulo-secao">Vídeos Recentes</h3>
+
+				<a href="#" class="cartao-link">Ver Todos</a>
+
+				<ul class="cartao-lista">
+					<li class="cartao-item">
+						<img src="img/miniatura_1.png" alt="Thumbnail Vídeo 1" class="cartao-item-img">
+						<h4 class="cartao-item-titulo">HZN - Lovemachine</h4>
+						<p class="cartao-item-perfil">Bruno Lopes</p>
+					</li>
+
+					<li class="cartao-item">
+						<img src="img/miniatura_2.png" alt="Thumbnail Vídeo 1" class="cartao-item-img">
+						<h4 class="cartao-item-titulo">HZN - Lovemachine</h4>
+						<p class="cartao-item-perfil">Bruno Lopes</p>
+					</li>
+
+					<li class="cartao-item">
+						<img src="img/miniatura_3.png" alt="Thumbnail Vídeo 1" class="cartao-item-img">
+						<h4 class="cartao-item-titulo">HZN - Lovemachine</h4>
+						<p class="cartao-item-perfil">Bruno Lopes</p>
+					</li>
+
+					<li class="cartao-item">
+						<img src="img/miniatura_4.png" alt="Thumbnail Vídeo 1" class="cartao-item-img">
+						<h4 class="cartao-item-titulo">HZN - Lovemachine</h4>
+						<p class="cartao-item-perfil">Bruno Lopes</p>
+					</li>
+
+					<li class="cartao-item">
+						<img src="img/miniatura_5.png" alt="Thumbnail Vídeo 1" class="cartao-item-img">
+						<h4 class="cartao-item-titulo">HZN - Lovemachine</h4>
+						<p class="cartao-item-perfil">Bruno Lopes</p>
+					</li>
+				</ul>
+			</article>
+			<!-- fim videos recentes -->
+
+			<!-- início arte -->
+			<article class="cartao cartao-destaque destaque-arte">
+				<img src="img/banner-mobile_2.png" alt="Banner da Arte" class="cartao-img cartao-img-mobile">
+				<img src="img/banner_2.png" alt="Banner da Arte" class="cartao-img cartao-img-td">
+
+				<div class="cartao-conteudo">
+					<p class="cartao-video-destaque">Nova arte</p>
+
+					<h3 class="video-titulo">Only Zikas - Lagoa Dompa Club</h3>
+					<p class="video-autor">Bruno Lopes</p>
+
+					<p class="cartao-info cartao-valor">33,33</p>
+					<p class="cartao-info cartao-visu">33 visualizações</p>
+
+					<button class="cartao-botao botao-destaque botao-comprar">Comprar agora</button>
+				</div>
+			</article>
+			<!-- fim arte -->
+
+			<!-- inicio novas artes -->
+			<article class="cartao cartao-recentes novas-artes">
+				<h3 class="titulo-secao">Novas Artes</h3>
+
+				<a href="#" class="cartao-link">Ver Todos</a>
+
+				<ul class="cartao-lista">
+					<li class="cartao-item">
+						<img src="img/miniatura_1.png" alt="Thumbnail Vídeo 1" class="cartao-item-img">
+						<h4 class="cartao-item-titulo">Sem Titulo</h4>
+						<p class="cartao-item-perfil">Bruno Lopes</p>
+					</li>
+
+					<li class="cartao-item">
+						<img src="img/miniatura_2.png" alt="Thumbnail Vídeo 1" class="cartao-item-img">
+						<h4 class="cartao-item-titulo">Sem Titulo 2</h4>
+						<p class="cartao-item-perfil">Bruno Lopes</p>
+					</li>
+
+					<li class="cartao-item">
+						<img src="img/miniatura_3.png" alt="Thumbnail Vídeo 1" class="cartao-item-img">
+						<h4 class="cartao-item-titulo">Sem Titulo 3</h4>
+						<p class="cartao-item-perfil">Bruno Lopes</p>
+					</li>
+
+					<li class="cartao-item">
+						<img src="img/miniatura_4.png" alt="Thumbnail Vídeo 1" class="cartao-item-img">
+						<h4 class="cartao-item-titulo">Sem Titulo 4</h4>
+						<p class="cartao-item-perfil">Bruno Lopes</p>
+					</li>
+
+					<li class="cartao-item">
+						<img src="img/miniatura_5.png" alt="Thumbnail Vídeo 1" class="cartao-item-img">
+						<h4 class="cartao-item-titulo">Sem Titulo 5</h4>
+						<p class="cartao-item-perfil">Bruno Lopes</p>
+					</li>
+				</ul>
+			</article>
+			<!-- fim novas artes -->
+
+			<!-- inicio produtos -->
+			<section class="secao secao-produtos linha-produtos">
+				<h3 class="titulo-secao">Camisas mais recentes</h3>
+
+				<article class="cartao">
+					<img src="img/produto_1.png" alt="Banner do Cartão" class="cartao-img">
+
+					<div class="cartao-conteudo">
+						<p class="video-autor">Bruno Lopes</p>
+
+						<h3 class="video-titulo">HZC - Title</h3>
+
+						<p class="cartao-info cartao-valor">33,33</p>
+
+						<button class="cartao-botao botao-comprar"></button>
+					</div>
+				</article>
+
+				<article class="cartao">
+					<img src="img/produto_2.png" alt="Banner do Cartão" class="cartao-img">
+
+					<div class="cartao-conteudo">
+						<p class="video-autor">Bruno Lopes</p>
+
+						<h3 class="video-titulo">HZC - Title</h3>
+
+						<p class="cartao-info cartao-valor">33,33</p>
+
+						<button class="cartao-botao botao-comprar"></button>
+					</div>
+				</article>
+
+				<article class="cartao">
+					<img src="img/produto_3.png" alt="Banner do Cartão" class="cartao-img">
+
+					<div class="cartao-conteudo">
+						<p class="video-autor">Bruno Lopes</p>
+
+						<h3 class="video-titulo">HZC - Title</h3>
+
+						<p class="cartao-info cartao-valor">33,33</p>
+
+						<button class="cartao-botao botao-comprar"></button>
+					</div>
+				</article>
+
+				<article class="cartao">
+					<img src="img/produto_4.png" alt="Banner do Cartão" class="cartao-img">
+
+					<div class="cartao-conteudo">
+						<p class="video-autor">Bruno Lopes</p>
+
+						<h3 class="video-titulo">HZC - Title</h3>
+
+						<p class="cartao-info cartao-valor">33,33</p>
+
+						<button class="cartao-botao botao-comprar"></button>
+					</div>
+				</article>
+			</section>
+			<!-- fim produtos -->
+		</main>
+	</body>
+
+	<script src="js/menu.js"></script>
+</html>

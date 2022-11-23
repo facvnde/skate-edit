@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+		<!-- Aqui colocaremos o charset para ver em qual tela é executada a página -->
+		<meta name="viewport" content="width= device-width, initial-scale=1.0">
+
+		<!-- Aqui puxamos a fonte tirada do google -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+
+		<link rel="stylesheet" href="css/reset.css">
+
+		<!--
+			Aqui puxamos os css que usaremos
+			por ser algo mais pensado pro mobile,
+			iremos montar primeiro pro mobile e no fim tablet/desktop
+		-->
+		<link rel="stylesheet" href="css/padrao.css">
+		<link rel="stylesheet" href="css/menu-mobile.css">	<link rel="stylesheet" href="css/integrantes-mobile.css">
+		<link rel="stylesheet" href="css/menu-tablet.css">	<link rel="stylesheet" href="css/integrantes-tablet.css">
+		<link rel="stylesheet" href="css/menu-desktop.css">	<link rel="stylesheet" href="css/integrantes-desktop.css">
+
+		<title>Integrantes || HZC</title>
+	</head>
+
+	<body>
+		<header class="cabecalho">
+			<!-- Botão do menu -->
+			<button class="botao-menu" aria-label="Menu"><i></i></button>
+
+			<!-- Logo da empresa -->
+			<img src="img/logo.svg" alt="Logo HZC" class="logo-cabecalho">
+
+			<!-- Nome do usuário -->
+			<p class="nome-usuario">Usuário Teste</p>
+
+			<!-- Botão de notificação -->
+			<button class="botao-notificacao" aria-label="Notificação"><i></i></button>
+		</header>
+
+		<!-- Menu lateral -->
+		<nav class="menu-lateral">
+			<img src="img/logo.svg" alt="Logo HZC" class="logo-menu">
+
+			<a href="index.html" class="menu-link menu-inicio">Início</a>
+			<a href="#" class="menu-link menu-videos">Vídeos</a>
+			<a href="#" class="menu-link menu-picos">Picos</a>
+			<a href="#" class="menu-link menu-integrantes menu-ativo">Integrantes</a>
+			<a href="#" class="menu-link menu-camisas">Camisas</a>
+			<a href="#" class="menu-link menu-pinturas">Pinturas</a>
+		</nav>
+
+		<main class="corpo">
+			<h2 class="titulo-pagina">Integrantes</h2>
+
+			<!-- início sobre o integrante -->
+			<article class="cartao integrante">
+				<img src="img/profile_1.png" alt="Foto Integrante" class="cartao-img">
+
+				<h3 class="nome-integrante">Lorem Ipsum</h3>
+
+				<p class="sobre-integrante">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et pulvinar elit. Maecenas quis quam libero. Cras non auctor tellus, vitae hendrerit libero. Ut dictum ipsum nec urna vehicula, ac eleifend tellus rhoncus. Etiam elementum tellus velit, sit amet viverra neque eleifend vel. Nulla venenatis tempor arcu. Suspendisse porta quam non pretium laoreet. Vestibulum rhoncus ac elit lacinia tincidunt. Sed in nunc tempor, mattis nisi ut, sollicitudin arcu.
+				</p>
+			</article>
+			<!-- fim sobre o integrante -->
+
+			<!-- início sobre o integrante -->
+			<article class="cartao integrante">
+				<img src="img/profile_2.png" alt="Foto Integrante" class="cartao-img">
+
+				<h3 class="nome-integrante">Lorem Ipsum</h3>
+
+				<p class="sobre-integrante">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et pulvinar elit. Maecenas quis quam libero. Cras non auctor tellus, vitae hendrerit libero. Ut dictum ipsum nec urna vehicula, ac eleifend tellus rhoncus. Etiam elementum tellus velit, sit amet viverra neque eleifend vel. Nulla venenatis tempor arcu. Suspendisse porta quam non pretium laoreet. Vestibulum rhoncus ac elit lacinia tincidunt. Sed in nunc tempor, mattis nisi ut, sollicitudin arcu.
+				</p>
+			</article>
+			<!-- fim sobre o integrante -->
+
+			<!-- início sobre o integrante -->
+			<article class="cartao integrante">
+				<img src="img/profile_3.png" alt="Foto Integrante" class="cartao-img">
+
+				<h3 class="nome-integrante">Lorem Ipsum</h3>
+
+				<p class="sobre-integrante">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et pulvinar elit. Maecenas quis quam libero. Cras non auctor tellus, vitae hendrerit libero. Ut dictum ipsum nec urna vehicula, ac eleifend tellus rhoncus. Etiam elementum tellus velit, sit amet viverra neque eleifend vel. Nulla venenatis tempor arcu. Suspendisse porta quam non pretium laoreet. Vestibulum rhoncus ac elit lacinia tincidunt. Sed in nunc tempor, mattis nisi ut, sollicitudin arcu.
+				</p>
+			</article>
+			<!-- fim sobre o integrante -->
+		</main>
+	</body>
+
+	<script src="js/menu.js"></script>
+</html>
